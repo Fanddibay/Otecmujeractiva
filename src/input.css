@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  ul.nav li {
+    @apply text-lg hover:text-purple-600 font-medium;
+  }
+
+  ul.footer li {
+    @apply hover:text-purple-600 font-extralight;
+  }
+
+  .card {
+    @apply bg-white shadow-md rounded-xl grid w-full md:w-[25%] mb-2 md:mb-0;
+  }
+
+  .paragraph p {
+    @apply text-text-color font-light leading-tight tracking-wider font-extralight my-4;
+  }
+}
+
+body {
+  font-family: "Sora", sans-serif;
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}
+
+.max-h-screen {
+  max-height: 100vh;
+}
+
+.transition-max-height {
+  transition: max-height 0.3s ease-in-out;
+}
